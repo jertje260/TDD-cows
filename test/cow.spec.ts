@@ -111,3 +111,20 @@ it("Given 'This is a very long sentence, it is long' it should print the sentenc
             ||     ||`
         );
 });
+
+it("Given a name longer then 36 characters, should multiline the name", () =>{
+    const output = cow.Speak("a".repeat(40));
+
+    expect(output)
+        .toBe(
+`/ Hello                                \\
+| ${("a".repeat(36))} |
+\\ aaaa!                                /
+ --------------------------------------
+   \\   ^__^
+    \\  (oo)\\_______
+        (__)\\       )\\/\\
+            ||----w |
+            ||     ||`
+    );
+});    
