@@ -11,7 +11,7 @@ it("Given a cow without input, it should say 'Hello world!'", () => {
  --------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`);
 
@@ -27,7 +27,7 @@ it("Given a cow with 'jeroen' as input, should print 'jeroen'", () => {
  ---------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`);
 });
@@ -42,7 +42,7 @@ it("Given a cow with 'sander' as input, should print 'sander'", () => {
  ---------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`);
 });
@@ -57,7 +57,7 @@ it("Given a very long name: 'thisismyverylongname' it should print the name with
  -----------------------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`);
 });
@@ -72,7 +72,7 @@ it("Given 'This is a sentence.', it should print the sentence", () =>{
  ---------------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`);
 
@@ -90,7 +90,7 @@ it("Given 'This is a very long sentence, it is more then the maximum of 40 chara
  --------------------------------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`
         );
@@ -106,7 +106,7 @@ it("Given 'This is a very long sentence, it is long' it should print the sentenc
  --------------------------------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`
         );
@@ -123,7 +123,7 @@ it("Given a name longer then 36 characters, should multiline the name", () =>{
  --------------------------------------
    \\   ^__^
     \\  (oo)\\_______
-        (__)\\       )\\/\\
+       (__)\\       )\\/\\
             ||----w |
             ||     ||`
     );
