@@ -1,5 +1,3 @@
-import { exportDefaultSpecifier } from "@babel/types";
-
 export class Cow {
     public Speak(say: string = "world"): string {
         if (say.indexOf(" ") === -1) {
