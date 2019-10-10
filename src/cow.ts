@@ -26,29 +26,29 @@ export class Cow {
                 lastSpaceIndex = left.length;
                 last = true;
             }
-            const output = left.substring(0, lastSpaceIndex) + " ".repeat(36 - (lastSpaceIndex));
-            left = left.substring(lastSpaceIndex + 1);
 
             if (first && last) {
                 value += `/ ${say} \\\n`;
                 value += `\\ ${" ".repeat(say.length)} /\n`
+                value += ` ${"-".repeat(say.length + 2)}`;
+                return value;
             }
-            else if (first) {
+
+            const output = left.substring(0, lastSpaceIndex) + " ".repeat(36 - (lastSpaceIndex));
+            left = left.substring(lastSpaceIndex + 1);
+
+
+            if (first) {
                 value += `/ ${output} \\\n`;
                 first = false;
             } else if (last) {
                 value += `\\ ${output} /\n`
+                value += ` ${"-".repeat(38)}`;
             } else {
                 value += `| ${output} |\n`
             }
         }
-
-        if (say.length > 36) {
-            value += ` ${"-".repeat(38)}`;
-        } else {
-            value += ` ${"-".repeat(say.length + 2)}`;
-        }
-
+        
         return value;
     }
 }
