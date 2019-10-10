@@ -94,7 +94,7 @@ it("Given 'This is a very long sentence, it is more then the maximum of 40 chara
             ||----w |
             ||     ||`
         );
-})
+});
 
 it("Given 'This is a very long sentence, it is long' it should print the sentence", () => {
     const output = cow.Speak("This is a very long sentence, it is long.");
@@ -110,4 +110,4 @@ it("Given 'This is a very long sentence, it is long' it should print the sentenc
             ||----w |
             ||     ||`
         );
-})
+});

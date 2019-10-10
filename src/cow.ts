@@ -17,12 +17,6 @@ export class Cow {
     }
 
     private GetBalloon(say: string): string {
-        if (say.length < 36) {
-            return `/ ${say} \\
-\\${" ".repeat(say.length + 2)}/
- ${"-".repeat(say.length + 2)}`;
-        }
-
         let value = "";
         let left = say;
         let first = true;
@@ -37,17 +31,25 @@ export class Cow {
             const output = left.substring(0, lastSpaceIndex) + " ".repeat(36 - (lastSpaceIndex));
             left = left.substring(lastSpaceIndex + 1);
 
-            if(first){
+            if (first && last) {
+                value += `/ ${say} \\\n`;
+                value += `\\ ${" ".repeat(say.length)} /\n`
+            }
+            else if (first) {
                 value += `/ ${output} \\\n`;
                 first = false;
-            } else if(last){
+            } else if (last) {
                 value += `\\ ${output} /\n`
             } else {
                 value += `| ${output} |\n`
             }
         }
 
-        value += ` ${"-".repeat(38)}`;
+        if (say.length > 36) {
+            value += ` ${"-".repeat(38)}`;
+        } else {
+            value += ` ${"-".repeat(say.length + 2)}`;
+        }
 
         return value;
     }
